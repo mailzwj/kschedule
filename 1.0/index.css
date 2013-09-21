@@ -1,0 +1,257 @@
+ul,
+li,
+h3 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: "";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.schedule-box {
+	width: 100%;
+	overflow: hidden;
+	font-size: 0.75em;
+	color: #666;
+	background-color: #ddd;
+}
+
+.schedule-header {
+	width: 100%;
+	border-bottom: 1px solid #bbb;
+}
+
+.schedule-header .h-item {
+	float: left;
+	width: 12.5%;
+	height: 25px;
+	line-height: 26px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.schedule-header .h-empty,
+.schedule-side {
+	width: 8%;
+}
+
+.schedule-header .col-wide {
+	width: 18.4%;
+}
+
+.schedule-header .col-narrow {
+	width: 13.14285%;
+}
+
+.schedule-side {
+	float: left;
+}
+
+.schedule-side .s-item {
+	display: block;
+	height: 25px;
+	line-height: 26px;
+	border-bottom: 1px solid transparent;
+	text-align: center;
+	overflow: hidden;
+}
+
+.schedule-side .s-item-odd {
+	border-bottom-color: #eee;
+}
+
+.schedule-content {
+	float: left;
+	position: relative;
+	width: 92%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+.schedule-content .c-col {
+	float: left;
+	width: 12.5%;
+	background-color: #e9e9e9;
+}
+
+.schedule-content .c-col .c-item {
+	display: block;
+	border-left: 1px solid #dfdfdf;
+	height: 25px;
+	border-bottom: 1px solid #dfdfdf;
+	overflow: hidden;
+}
+
+.schedule-header .h-today,
+.schedule-content .c-today {
+	background-color: #f6f6f6;
+}
+
+.schedule-content .c-col .c-working {
+	background-color: #efefef;
+}
+
+.schedule-content .c-today .c-working {
+	background-color: #f6f6f6;
+}
+
+.schedule-content .c-col .c-item:hover {
+	background-color: #e5e5e5;
+}
+
+.schedule-content .col-wide {
+	width: 20%;
+}
+
+.schedule-content .col-narrow {
+	width: 14.2857%;
+}
+
+.schedule-content .now-time {
+	display: none;
+	position: absolute;
+	z-index: 1000;
+	height: 2px;
+	background-color: #f00;
+}
+
+.schedule-block {
+	position: absolute;
+	z-index: 100;
+	background-color: #396;
+	color: #fff;
+	overflow: hidden;
+	cursor: move;
+}
+
+.schedule-block .time-bar {
+	padding: 8px 5px 0;
+	font-size: 0.85em;
+}
+
+.schedule-block .text-box {
+	padding: 3px 5px 5px;
+	line-height: 1.5;
+}
+
+/* 浮层框架样式 */
+.schedule-form {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10000;
+	padding: 0 0 0 40px;
+}
+
+.schedule-form-outside {
+	padding: 0 40px 0 0;
+}
+
+.schedule-form .form-arrow {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 10;
+	margin-top: -20px;
+	width: 40px;
+	height: 40px;
+}
+
+.schedule-form-outside .form-arrow {
+	left: auto;
+	right: 0;
+}
+
+.schedule-form .form-arrow .arrow {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+	border-left: 0;
+	border-right: 40px solid #ccc;
+	border-top: 20px dashed transparent;
+	border-bottom: 20px dashed transparent;
+}
+
+.schedule-form-outside .form-arrow .arrow {
+	border-right: 0;
+	border-left: 40px solid #ccc;
+}
+
+.schedule-form .form-arrow .arrow-up {
+	left: 4px;
+	border-right-color: #fff;
+}
+
+.schedule-form-outside .form-arrow .arrow-up {
+	left: auto;
+	right: 4px;
+	border-left-color: #fff;
+}
+
+.schedule-form .form-body {
+	padding: 25px;
+	width: 380px;
+	/*height: 240px;*/
+	border: 2px solid #ccc;
+	background-color: #fff;
+}
+
+.schedule-form .form-close {
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	width: 24px;
+	height: 24px;
+	line-height: 25px;
+	text-align: center;
+	background-color: #efefef;
+	color: #000;
+	text-decoration: none;
+}
+
+.schedule-form .form-close:hover {
+	color: #f00;
+}
+
+.schedule-form-outside .form-close {
+	right: 42px;
+}
+
+.form-element {
+	display: block;
+}
+
+.form-element .schedule-main {
+	margin: 0;
+	padding: 5px 8px;
+	width: 364px;
+	height: 80px;
+}
+
+.form-element .overlay-action {
+	margin-top: 15px;
+	text-align: right;
+}
+
+
+
+
+

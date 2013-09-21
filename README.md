@@ -9,6 +9,7 @@
 
 * 功能：组件为日程管理提供增、删、改、查功能，方便对时间进行管理。
 * 优点：调用简单，功能全面，界面清新，当然还具有很大的升级空间。
+* ![Kschedule](http://www.seejs.com/wp-content/uploads/2013/09/kschedule.png)
 
 ## 方法
 

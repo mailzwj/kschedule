@@ -679,7 +679,7 @@ KISSY.add(function (S, Node, Base, Sizzle, Xtpl, SF) {
         }
     }});
     return Kschedule;
-}, {requires:['node', 'base', 'sizzle', 'xtemplate', 'gallery/kschedule/1.0/scheduleform']});
+}, {requires:['node', 'base', 'sizzle', 'xtemplate', './scheduleform']});
 
 
 

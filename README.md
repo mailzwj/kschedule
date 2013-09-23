@@ -31,9 +31,17 @@
 * @param scrollTo{int} 指定初始滚动到的时间点取值范围0 ~ 23，默认9
 * @param highlight{Object} 高亮区域从几点到几点，为显示工作时间设置，默认{from: 9, to: 18}
 * @param save{String} 新增日程存储接口链接，要求以jsonp格式返回存储状态，包括记录id
+    - 传递参数：?id=&date=1380038400000&stime=10:30&etime=11:30&content=aaa
+    - 返回格式：{"success": true, "id": "53881", "content": "aaa"}
 * @param read{String} 读取已有日程列表接口链接，要求返回jsonp数据
+    - 传递参数：?monday=1379865600000&days=7
+    - 返回格式：{"monday": "1379865600000", "schedules": [{"id": "92142", "date": "1380297600000", "start-time": "09:00", "end-time": "10:00", "content": "729日程内容好像也只能51随便写点了"}]}
 * @param delete{String} 删除对应id的日程记录，要求以jsonp格式返回删除状态
+    - 传递参数：?id=99459
+    - 返回格式：{"success": true, "id": "99459"}
 * @param update{String} 更新对应id的日程记录，要求以jsonp格式返回更新状态
+    - 传递参数：?id=49846&date=1380038400000&stime=10:30&etime=11:30&content=xxxxx
+    - 返回格式：{"success": true, "schedule": [{"id": "92142", "date": "1380297600000", "start-time": "09:00", "end-time": "10:00", "content": "729日程内容好像也只能51随便写点了"}]}
 
 ## 调用示例
 
@@ -82,6 +90,11 @@ S.use('gallery/kschedule/1.0/index,gallery/kschedule/1.0/index.css', function (S
 ```
 
 ## changelog
+
+### 20130923
+
+* 修改组件依赖为相对路径
+* 更新文档，添加接口传参以及返回格式说明
 
 ### 首次提交组件代码
 

@@ -38,7 +38,7 @@
     }
 
     S.use('gallery/kschedule/1.0/index,gallery/kschedule/1.0/index.css', function (S, Kschedule) {
-         var ksd = new Kschedule({
+        var ksd = new Kschedule({
             container: ".J_Kschedule",
             prev: ".J_PrevWeek",
             next: ".J_NextWeek",
@@ -53,8 +53,11 @@
             read: "http://www.seejs.com/demos/schedule/read.php",
             delete: "http://www.seejs.com/demos/schedule/delete.php",
             update: "http://www.seejs.com/demos/schedule/update.php"
-         });
-         ksd.render();
+        });
+        ksd.render();
+        S.one(window).on("resize", function(e){
+            ksd.resize();
+        });
     })
 </script>
 </body>

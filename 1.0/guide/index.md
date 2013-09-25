@@ -19,6 +19,7 @@
 * isToday(date) 判断指定date是否为当前天
 * hasToday() 判断组件视图当前显示周是否包含今天
 * hideLine() 用于隐藏当前时间点那条标志线
+* resize() 当组件容器尺寸发生变化时，可调用resize方法，重新渲染日程位置和尺寸
 
 ## 参数说明
 
@@ -90,6 +91,10 @@ S.use('gallery/kschedule/1.0/index,gallery/kschedule/1.0/index.css', function (S
 ```
 
 ## changelog
+
+### 20130925
+
+* 新增resize方法，当组件容器尺寸可变时，用以调节日程尺寸和位置
 
 ### 20130923
 

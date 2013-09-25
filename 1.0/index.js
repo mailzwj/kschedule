@@ -141,6 +141,20 @@ KISSY.add(function (S, Node, Base, Sizzle, Xtpl, SF) {
             var m = self.fillDoub(time % 60);
             return {h: h, m: m};
         },
+        resize: function(){
+            var self = this;
+            var scds = self.fields.all(".J_ScheduleBlock"), cols = self.fields.all(".c-col");
+            var col = 0, cw = S.one(cols[0]).outerWidth();
+            self._fixHeight();
+            self.set("colWidth", cw);
+            scds.each(function(sb, idx){
+                col = Math.floor((parseInt(sb.attr("data-date")) - parseInt(self.monday.getTime())) / self.get("msDay"));
+                sb.css({"left": col * cw, "width": cw - 5});
+            });
+            if (self.scheduleform.overlay.css("display") === "block") {
+                self.scheduleform.showToTarget(self.currentTarget);
+            }
+        },
         _formDelegate: function() {
             var self = this;
             self.scheduleform.overlay.delegate("click", ".J_Update", function(e){

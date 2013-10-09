@@ -92,6 +92,10 @@ S.use('gallery/kschedule/1.0/index,gallery/kschedule/1.0/index.css', function (S
 
 ## changelog
 
+### 20131009
+
+* 修复resize后新增日程，新增块宽度不变的bug
+
 ### 20130925
 
 * 新增resize方法，当组件容器尺寸可变时，用以调节日程尺寸和位置

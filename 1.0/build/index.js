@@ -328,6 +328,7 @@ KISSY.add('gallery/kschedule/1.0/index',function (S, Node, Base, Sizzle, Xtpl, S
             self.fields.delegate("mousedown", ".c-item", function(e){
                 var tar = S.one(e.target);
                 var scp = self.fields.one(".J_ScheduleList");
+                cw = self.get("colWidth") || S.one(self.cols[0]).outerWidth();
                 if (self.currentTarget && !self.currentTarget.hasClass("J_ScheduleBlock")) {
                     self.currentTarget.remove();
                 }
